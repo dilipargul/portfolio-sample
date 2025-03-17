@@ -1,0 +1,436 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "view-port" content="width:device-width,initial-scale:1">
+	<title>Dilip Resume</title>
+	<script src="https://kit.fontawesome.com/81520cefc1.js" crossorigin="anonymous"></script>
+	<style>
+	body{margin:0px;
+	font-family:sans-serif;}
+		body header{
+		background-image:url(images/bee.jpg);
+		background-image-attachment:fixed;
+		height:65vh;
+		
+		background-repeat:no-repeat;
+				
+		}
+		#image{}
+		ul{
+		text-align:center;}
+		ul li {
+		
+		
+		display:inline-block;}
+		ul li a {
+		font-size:20px;
+		margin:20px;
+		color:white;
+		text-decoration:none;}
+		ul li a:hover {
+		color:yellow;}
+		#name {
+		font-size:50px;
+		letter-spacing:10px;
+		color:white;
+		font-family:seriff;
+		text-align:center;
+		margin-top:0px;
+		font-weight:strong;}
+		nav a i{display:none;color:red;}
+		#icons li a i{
+		
+		height:20px;
+		padding:20px;
+		margin-top:-50px;
+		shadow-color:rgba(230,196,196,0.3);}
+		
+	#icons li a i{border-radius:50% ;transition:box-shadow 0.7s;}
+	#icons li i:hover{
+	
+	box-shadow: 0px 0px 6px 4px rgba(230,196,196,0.3);
+	}
+	
+	
+	/*about section*/
+	#about{
+	text-align:center;
+	
+	
+	height:auto;
+	width:100%;}
+	#about-img{height:12rem;
+	width:12rem;margin:auto;margin-top:-90px; }
+	#about-img img{height:100%;width:100%;border-radius:50%;box-shadow:0px 0px 16px 6px rgba(233,196,196,0.3);}
+	#about  p {margin:30px 150px;text-align:justify;}
+	
+	/* skills display*/
+	#skills
+	{
+	/*background-color:#E5DDC5;*/
+	height:auto;
+	}
+	
+	.the-heading
+	{
+	color:rgba(0, 0, 0, 0.6);
+	text-align:center;
+	font-weight:lighter;
+	font-size:40px;
+	margin-top:0px;padding:60px;
+	background-color:rgba(0, 0, 0, 0.16);
+	}
+	
+	.display-container
+	{
+	display:flex;
+	margin:-40px 50px 0px;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	
+	height:auto;
+	}
+	
+	.display-container .full-bar
+	{
+	
+	box-shadow:3px 3px 6px 3px grey,0px -3px 6px 3px white inset; 
+	
+	height:25px;
+	width:160px;
+	background-color:lightgrey;
+	border-radius:10px 10px 10px 10px;
+	margin:30px;
+	}
+	
+	.display-container div div{
+	text-align:center;color:white;align-content:center;font-weight:bold;letter-spacing:auto;box-shadow:3px -3px 6px 3px grey inset;}
+	#html{width:90%;height:100%;background-color:#F27BBD;border-radius:10px 0px 0px 10px;
+	}
+	#css{width:85%;height:100%;background-color:#F27BBD;border-radius:10px 0px 0px 10px;}
+	#js{width:65%;height:100%;background-color:#F27BBD;border-radius:10px 0px 0px 10px;}
+	#python{width:80%;height:100%;background-color:#F27BBD;border-radius:10px 0px 0px 10px;}
+	#sql{width:70%;height:100%;background-color:#F27BBD;border-radius:10px 0px 0px 10px;}
+	
+	/*Portfolio*/
+		
+		#portfolio-sec{
+		
+		margin:0px 0px 50px 0px;
+		height:auto;
+		}
+		
+		.image-container{
+		width:200px;
+		height:150px;
+		background-color:#E5DDC5;
+		margin:50px;
+		}
+		
+		 
+		.image-container img{
+		width:100%;
+		height:100%;
+		}
+		.img-box{
+		width:200px;
+		height:200px;
+		position:relative;
+		}
+		
+		.image{width:100%;
+		height:100%;}
+		
+		.msg-box{width:100%;
+		height:100%;
+		position:absolute;
+		top:0;
+		left:0;
+		opacity:0;}
+		
+		
+		
+		.img-box:hover .msg-box{
+		box-shadow:6px 6px black;opacity:1;}
+		#exp{position:relativeheight:400px;background-color:purple;}
+		#exp div{display:flex;
+		flex-direction:row;justify-content:space-around;align-items:center;}
+		#exp div div{width:60px;height:80px;
+}
+#box1{background-color:red;}
+#box2{background-color:orange;}
+#box3{background-color:green;}
+#box4{background-color:blue;}
+
+
+/*contact*/
+	input{
+	width:30vw;
+	border:None;
+	border-bottom:3px solid white;
+	line-height:50px;
+	background-color:transparent;
+	}
+	form{
+	display:flex;
+	align-items:center;
+	flex-direction:column;
+	width:80%;}
+	
+	form button{margin:20px;
+	width:40%;
+	background-color:transparent;
+	color:white;
+	padding:10px;
+	border:3px solid white;transition:background-color 0.3s;}
+	form button:hover{background-color:rgba(0,0,0,0.4);}
+	#info{
+	width:30vw;
+	display:inline-block;}
+	
+	#info p{width:60%;}
+/*section:target{background-image:linear-gradient(45deg,#1BFFFF,#2E3192);}*/
+section:nth-child(2n){background-color:#E5DDC5;}
+#contact{
+background-image:linear-gradient(45deg,#2E3192 ,#1BFFFF);}
+
+
+/*Experience*/
+
+#experience{
+height:auto;position:relative;margin:auto;}
+
+#exp-flex{width:75%;left:5%;position:relative;padding:20px;
+height:auto;}
+#menu{margin-top:0px;}
+.exp-box{z-index:1;display:flex;flex-wrap:wrap;flex-direction:column;border:2px solid green;border-radius:15px;position:relative;width:30%;height:auto;padding:15px;left:5%;}
+	.exp-box:nth-child(2n){left:63%;}
+
+	
+	.travel{width:0;position:absolute;border:2px dotted grey;height:90%;top:5%;left:50%;}
+	.traveller {top:10%;z-index:2;transform:rotate(90deg); position:sticky;}
+	.side-detail h4,h5{margin:5px;width:auto;}
+	.side-detail{width:100%;display:flex;flex-direction:column;align-items:flex-end;}
+	#drop-down{color:white;display:none;right:5px;justify-content:right;position:absolute;}
+	#drop-content{display:none;}
+	#drop-content div{padding:3px; width:80px;height:30px;background-color:cornsilk;}
+	
+	
+	@media screen and (max-width:768px){.exp-box:nth-child(2n){left:5%;width:70%;}.exp-box{width:70%;}
+	#contact div{width:80%;}input{width:80%;} .travel{left:5%;}}
+	@media screen and (max-width:572px){#menu{display:none;}
+	@media screen and (max-width:572px){#drop-down{display:block;}}
+	@media screen and (max-width:572px){#drop-down:hover #drop-content{display:block;}}
+	@media screen and (max-width:572px){#about  p {margin:30px 50px;}
+	
+	
+	</style>
+	
+</head>
+<body>
+<div id = "image"></div>
+<header>
+	<nav>
+	<ul id = "menu">
+		<li ><a href = "#">Home</a></li>
+		<li ><a href = "#about">About</a></li>		
+		<li ><a href = "#skills">Skills</a></li>
+		<li ><a href = "#education">Education</a></li>
+		<li ><a href = "#experience">Experience</a></li>
+		<li ><a href = "#contact">Contact</a></li>
+	</ul>
+	<div id = "drop-down">
+		<a><i class="fa-solid fa-bars"></i></a>
+		<div id = "drop-content">
+		<div><a href = "#about">About</a></div>
+		<div><a href = "#skills">Skills</a></div>
+		<div><a href = "#education">Education</a></div>
+		<div><a href = "#experience">Experience</a></div>
+		<div><a href = "#contact">Contact</a></div></div>
+	</div>
+	</nav>
+	<p id = "name">DILIP ARUGULA</p>
+	
+	<ul id = "icons">
+		<li><a><i class="fa-brands fa-google-plus-g"></i></a></li>
+		<li><a><i class="fa-brands fa-facebook"></i></a></li>
+		<li><a><i class="fa-brands fa-linkedin"></i></a></li>
+		<li><a><i class="fa-brands fa-youtube"></i></a></li>
+		<li><a><i class="fa-brands fa-quora"></i></a></li>
+	</ul>
+	</header>
+	
+	<section id = "about">
+		<div id = "about-img">
+			<img src="images/gogh.png">
+		</div>
+		<p>In today’s complex world, full of distractions and demands on our time, it’s easy to overlook the power of simplicity. We’re conditioned to seek more — more commitments, more material things, more stimulation. But a complex life filled with excess doesn’t lead to more happiness or fulfillment. Often, it’s the simplest things that bring us the most meaning and lift us up when we’re feeling overwhelmed.
+
+Think about what restores your sense of wonder or brings you joy. It might be listening to music, reading a book, playing with your dog, or calling a close friend. These small acts are food for our souls but are easy to forget in favor of the next thing on the to-do list or the newest Netflix show (BTW, the new season of Outer Banks is A-MAY-ZING). Don’t underestimate the value of doing less and appreciating the fundamentals that spark inspiration or peace in your life.</p>
+	</section>
+	<section id = "skills">
+		<h1 class = "the-heading"><i class="fa-solid fa-graduation-cap"></i>SKILLS</h1>
+		<div class = "display-container">
+			<div class = "full-bar">
+				<div id = "html">HTML</div>
+			</div>
+			<div class = "full-bar">
+				<div id = "css">CSS</div>
+			</div>
+			<div class = "full-bar">
+				<div id = "js">J Script</div>
+			</div>
+			<div class = "full-bar">
+				<div id = "python">Python</div>
+			</div>
+			<div class = "full-bar">
+				<div id = "sql">Sequel</div>
+			</div>
+		</div>
+	
+	</section>
+	
+	<section id = "portfolio-sec">
+	<h1 class = "the-heading"><i class="fa-solid fa-graduation-cap"></i>PORTFOLIO</h1>
+	<div class = "display-container">
+		<div class="image-container">
+			<div class ="img-box">
+				<img class="image"src = "images/statue.jpg">
+				<div class = "msg-box">
+					<h2>This message appears when hovered</h2>
+				</div>
+			</div>
+		</div>
+		
+		<div class="image-container">
+			<div class ="img-box">
+				<img class="image"src = "images/statue.jpg">
+				<div class = "msg-box">
+					<h2>This message appears when hovered</h2>
+				</div>
+			</div>
+		</div>
+		
+		<div class="image-container">
+			<div class ="img-box">
+				<img class="image"src = "images/statue.jpg">
+				<div class = "msg-box">
+					<h2>This message appears when hovered</h2>
+				</div>
+			</div>
+		</div>
+		
+		<div class="image-container">
+			<div class ="img-box">
+				<img class="image"src = "images/statue.jpg">
+				<div class = "msg-box">
+					<h2>This message appears when hovered</h2>
+				</div>
+			</div>
+		</div>
+		
+		<div class="image-container">
+			<div class ="img-box">
+				<img class="image"src = "images/statue.jpg">
+				<div class = "msg-box">
+					<h2>This message appears when hovered</h2>
+				</div>
+			</div>
+		</div>
+		
+		
+	</div>
+		
+		
+	</div>
+</section>	
+	<!--<section id = "education"></section>
+	<section id = "experience"></section>-->
+	<section id = "experience">
+		<h1 class="the-heading"><i class="fa-solid fa-graduation-cap"> </i>EXPERIENCE</h1>
+		<div id="exp-flex">
+			<div class = "exp-box"><div class = "side-detail"><h4 style="margin:10px;">Netsuite Developer</h4><h5 style="margin:10px;">Freelance</h5></div><p>Support all end user requests and provide issue resolution for NetSuite internal users. This will include assisting end users with data analysis, reporting and optimization of their use of NetSuite.
+• Work with support analysts, coordinating activities to meet incident management targets and build knowledge capture and transfer within the team.
+ </p></div>
+			<div class = "exp-box"><div class = "side-detail"><h4 style="margin:10px;">Netsuite Admin</h4><h5 style="margin:10px;">MTU</h5></div><p>Duties will include assisting end users with data analysis, reporting and optimization of their use of NetSuite.
+• Work with support analysts, coordinating activities to meet incident management targets and build knowledge capture and transfer within the team.
+ </p></div>
+			<div class = "exp-box"><div class = "side-detail"><h4 style="margin:10px;">Netsuite Techno-Functional Consultant</h4><h5 style="margin:10px;">Spectra</h5></div><p>
+• Work with support analysts, coordinating activities to meet incident management targets and build knowledge capture and transfer within the team.
+ </p></div>
+						<div class = "exp-box"><div class = "side-detail"><h4 style="margin:10px;">Front End Dev</h4><h5 style="margin:10px;">Freelance</h5></div><p>
+• Work with support analysts, coordinating activities to meet incident management targets and build knowledge capture and transfer within the team.
+ </p></div>
+			<div class = "travel">
+		<div class="traveller">
+			<i class="fa-solid fa-plane"></i>
+			</div>
+		</div>
+
+		</div>
+		
+		
+	</section>
+	
+	
+	<section id = "education">
+		<h1 class="the-heading">Education</h1>
+		<div id="exp-flex">
+			<div class = "exp-box"><div class = "side-detail"><h4 >MBA-MIS</h4><h5 >CUW,Wisconsin</h5><h5>2015-2017</div>
+ </div>
+			<div class = "exp-box"><div class = "side-detail"><h4 >ME-CAD/CAM</h4><h5 >CBIT,HYD</h5><h5>2013-2015</div></div>
+			<div class = "exp-box"><div class = "side-detail"><h4 >B.TECH-MECH</h4><h5 >SICET,HYD</h5><h5>2008-2012</div></div>
+						
+			<div class = "travel">
+		<div class="traveller">
+			<i class="fa-solid fa-plane"></i>
+			</div>
+		</div>
+
+		</div>
+		
+		
+	</section>
+	
+	
+	<section id = "contact">
+		<h1 class= "the-heading"><i class="fa-solid fa-address-book"></i>CONTACT</h1>
+		
+		<div class="display-container">
+			<div id = "form-div">
+				<form>
+					
+					<input type = "text" id = "contact-name" placeholder="Name" required ><br>
+					<input type = "text" id = "contact-name" placeholder="Email" required ><br>
+					<input type = "text" id = "contact-name" placeholder="Message" required ><br>
+					<button>Send Message</button>
+				</form>
+			</div>
+			<div id = "info">
+				<h4>Get in Touch</h4>
+				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,  </p>
+				<h4>Address</h4>
+				<address>
+
+Visit us at:<br>
+<i class="fa-solid fa-location-crosshairs"></i>Example.com<br>
+<i class="fa-solid fa-location-crosshairs"></i>Box 564, Disneyland<br>
+<i class="fa-solid fa-location-crosshairs"></i>USA
+</address>
+			</div>
+		</div>
+		
+		<div id = "icons">
+		<ul id = "icons">
+		<li><a><i class="fa-brands fa-google-plus-g"></i></a></li>
+		<li><a><i class="fa-brands fa-facebook"></i></a></li>
+		<li><a><i class="fa-brands fa-google-plus-g"></i></a></li>
+		<li><a><i class="fa-brands fa-facebook"></i></a></li>
+		<li><a><i class="fa-brands fa-quora"></i></a></li>
+	</ul></div>
+	</section>
+
+</body>
+
+</html>
